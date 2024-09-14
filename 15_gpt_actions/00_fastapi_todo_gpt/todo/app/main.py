@@ -38,11 +38,11 @@ async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
 
 app = FastAPI(lifespan=lifespan, title="Hello World API with DB",
               version="0.0.1",
-            #   servers=[{
-            #       # ADD Cloudflared URL Here Before Creating GPT Action
-            #       "url": "https://luxembourg-souls-else-guild.trycloudflare.com",
-            #       "description": "Development Server"
-            #   }]
+              servers=[{
+                  # ADD Cloudflared URL Here Before Creating GPT Action
+                  "url": "https://scholar-contained-photographers-keeping.trycloudflare.com",
+                  "description": "Development Server"
+              }]
               )
 
 
